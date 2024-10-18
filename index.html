@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Salary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Nurse Salary Calculator - Sri Lanka</h1>
+
+        <label for="grade">Select Nurse Grade:</label>
+        <select id="grade">
+            <option value="I">Grade I</option>
+            <option value="II">Grade II</option>
+            <option value="III">Grade III</option>
+        </select>
+
+        <label for="ot-hours">Overtime (OT) Hours:</label>
+        <input type="number" id="ot-hours" placeholder="Enter OT hours">
+
+        <label for="deductions">Deductions (Rs):</label>
+        <input type="number" id="deductions" placeholder="Enter deductions">
+
+        <label for="days-off">Days Off:</label>
+        <input type="number" id="days-off" placeholder="Enter days off">
+
+        <button onclick="calculateSalary()">Calculate Salary</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

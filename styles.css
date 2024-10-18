@@ -1,0 +1,119 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator container styling */
+.calculator {
+    background-color: #1e1e1e; /* Darker card background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.calculator:hover {
+    box-shadow: 0px 12px 25px rgba(255, 255, 255, 0.2); /* Lighter shadow on hover */
+}
+
+h1 {
+    color: #ffffff; /* White text for the heading */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 1rem;
+    color: #cccccc; /* Light gray for labels */
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #444; /* Dark border */
+    background-color: #333; /* Input background */
+    font-size: 1rem;
+    color: #ffffff; /* White text for inputs */
+    transition: border-color 0.2s ease;
+}
+
+input::placeholder,
+select {
+    color: #aaaaaa; /* Placeholder color */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50; /* Green outline on focus */
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for effect */
+}
+
+button:hover {
+    background-color: #43a047; /* Darker green on hover */
+}
+
+/* Result box styling */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2a2a2a; /* Dark result box */
+    border-radius: 8px;
+    border: 1px solid #444; /* Dark border for result box */
+    color: #ffffff; /* White text for results */
+    font-size: 1.2rem;
+}
+
+/* Responsive styling */
+@media (max-width: 400px) {
+    .calculator {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        padding-right:10px; 
+        }
+        
+        #result {
+            font-size: 1.1rem; 
+        }
+}

@@ -1,0 +1,16 @@
+{
+  "grades": {
+    "I": {
+      "basicSalary": 90000,
+      "otRate": 300
+    },
+    "II": {
+      "basicSalary": 75000,
+      "otRate": 250
+    },
+    "III": {
+      "basicSalary": 60000,
+      "otRate": 215
+    }
+  }
+}
